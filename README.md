@@ -25,7 +25,7 @@ Before loading the data into PostgreSQL, I cleaned it in Excel:
 - Saved the cleaned file as a CSV for import into PostgreSQL
 
 The cleaned dataset came out to **101,763 rows and 25 columns**.
-`diabetic_project.csv`
+[`diabetic_project.csv`](diabetic_project.csv)
 **SQL Analysis**
 I used PostgreSQL to write analytical queries focused on readmission patterns:
 
@@ -34,7 +34,8 @@ I used PostgreSQL to write analytical queries focused on readmission patterns:
 3. Readmission by days in hospital — whether longer stays were linked to higher readmission rates
 4. Readmission by number of medications — whether patients on more medications were readmitted more often
 
-The queries used GROUP BY, CASE WHEN, window functions, and aggregate functions. See [`diabetic_postgres_project.sql`](diabetic_postgres_project.sql for the full code.
+The queries used GROUP BY, CASE WHEN, window functions, and aggregate functions. 
+See [`diabetic_postgres_project.sql`](diabetic_postgres_project.sql) for the full code.
 
 **Key Findings**
 
@@ -63,7 +64,7 @@ The Power BI dashboard includes:
 - A bar chart showing readmission rates by age group
 - A line chart showing the relationship between length of stay and readmission rate
 - A scatter plot showing readmission rate by number of medications
-![Dashboard Preview](hospital readmission data.png)
+![Dashboard Preview](hospital%20readmission%20data.png)
 
 **What I Learned**
 One thing that stood out to me was how easy it is to be misled by raw numbers. For example, the readmission counts dropped sharply for patients who stayed longer in the hospital, which at first looked like longer stays were safer. But once I looked at the rates instead of the counts, the opposite was true. That's something I'll carry into every analysis going forward.
