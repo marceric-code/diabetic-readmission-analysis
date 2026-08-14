@@ -5,7 +5,7 @@
 This project looks at 30-day hospital readmission rates among diabetic patients using a dataset of over 100,000 hospital encounters across 130 US hospitals between 1999 and 2008. The goal was to identify which patient groups are most at risk of being readmitted within 30 days of discharge and present those findings in a clear, interactive dashboard.
 
 ## Why This Matters 
-Hospitals in the US are financially penalized by the Centers for Medicare & Medicaid Services (CMS) under the Hospital Readmissions Reduction Program (HRRP) when their 30-day readmission rates are too high. For diabetic patients specifically, managing readmissions is a major challenge — diabetes is one of the most common conditions among readmitted patients. Understanding which patients are most likely to return can help hospitals take proactive steps before discharge.
+Hospitals in the US are financially penalized by the Centers for Medicare & Medicaid Services (CMS) under the Hospital Readmissions Reduction Program (HRRP) when their 30-day readmission rates are too high. For diabetic patients specifically, managing readmissions is a major challenge. Diabetes is one of the most common conditions among readmitted patients. Understanding which patients are most likely to return can help hospitals take proactive steps before discharge.
 
 ## Tools Used
 - Microsoft Excel — data cleaning 
@@ -41,13 +41,13 @@ See [`diabetic_postgres_project.sql`](diabetic_postgres_project.sql) for the ful
 ## Key Findings
 
 **Overall Rate**
-About 11.16% of patients were readmitted within 30 days — this is the number hospitals are most concerned about from a financial and clinical standpoint.
+About 11.16% of patients were readmitted within 30 days. This is the number hospitals are most concerned about from a financial and clinical standpoint.
 
 ## Age Group
 Patients aged 20–30 had the highest 30-day readmission rate at **14.24%**, which was actually surprising. You might expect older patients to struggle more, but this age group stood out significantly. The 80–90 age group came in second at 12.08%, which is more expected.
 
 ## Length of Stay
-There was a clear upward trend — the longer a patient stayed in the hospital, the more likely they were to come back. Patients who stayed just 1 day had a readmission rate of **8.18%**, while patients who stayed 10 days had a rate of **14.35%** — nearly double. This suggests that length of stay might be a useful predictor of readmission risk.
+There was a clear upward trend, the longer a patient stayed in the hospital, the more likely they were to come back. Patients who stayed just 1 day had a readmission rate of **8.18%**, while patients who stayed 10 days had a rate of **14.35%**, nearly double. This suggests that length of stay might be a useful predictor of readmission risk.
 
 ## Number of Medications
 Patients on more medications also showed higher readmission rates, rising from around 4% for patients on 1 medication up to about 16% for patients on 35 medications. Patients on 50+ medications were excluded from this part of the analysis since the sample sizes were too small to be meaningful.
